@@ -1,0 +1,697 @@
+@charset "UTF-8";
+
+/*Overordnet style på alle sider*/
+
+body{
+	font-family: 'Sarabun', sans-serif;
+	background-color: white;
+	margin: 0px;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+/* Style the header */
+.navbar {
+    overflow: auto;
+    background-color: white;
+    padding: 20px 20px;
+	border: thick;
+	width: 100%;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 8px 10px 0 rgba(0, 0, 0, 0.0);
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*.dropdown .dropbtn{
+	padding: 0;
+	margin: 0;
+}*/
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #AA917D;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#logo{
+	float: left;
+	display:block;
+	padding: 0;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+#logo img {
+  height: 55px;
+  float: left;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    color: #C3B4AA;
+}
+
+/* Style the active/current link*/
+.navbar a.active {
+    color: #C3B4AA;
+} 
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 500px) {
+  .header a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+	
+  .header-right {
+      float: none;
+  }
+}
+
+footer{
+	height: 100px;
+	background-color:  #3C3C3C;
+}
+
+footer p{
+	float: left;
+	height: 60px;
+}
+
+.insta{
+	width: 50px;
+    margin-top: 25px;
+	float: right;
+}
+
+.pinter{
+	width: 50px;
+	margin-top: 25px;
+	float: right;
+}
+
+.linked{
+	width: 50px;
+    margin-top: 25px;
+	float: right;
+	margin-right: 30px;
+}
+
+.copy{
+	color: gray;
+	font-size: 16px;
+	padding-top: 45px;
+	padding-left: 30px;
+	margin: 0;
+	display: block;
+}
+
+/*--------------------------------------------------STYLE FORSIDE-----------------------------------------------*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/*Baggrundsbillede*/
+.baggrund {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*Baggrundstekst*/
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+}
+
+.hero-text a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #CBBEB5;
+  text-align: center;
+  cursor: pointer;
+  font-size: 40%;
+  font-weight: normal;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+h1{
+	margin-bottom: 20px;
+}
+
+.hero-text a:hover {
+  background-color: #ddd;
+  color: #3C3C3C;
+}
+
+h2{
+	text-align: center;
+	font-size: 35px;
+	color: #3C3C3C;
+	margin-bottom: 5%;
+}
+
+.skill h3{
+	margin-bottom: 1%;
+}
+
+.skills{
+	display: flex;
+	justify-content: center;
+}
+
+.skill{
+	width: 30%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.skill p{
+	text-align: center;
+	margin-bottom: 20%;
+	color: #3C3C3C;
+	width: 60%;
+}
+
+.skill img{
+	width: 40%;
+}
+
+/*--------------------------------------------------STYLE PROJEKTER----------------------------------------------*/
+
+.tekst div h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 5px;
+}
+
+.tekst div h3{
+	text-align: center;
+	font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.mid{
+	margin-right: auto;
+	margin-left: 15%;
+}
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 40%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*---------------------------------------------------FLOW 1, 2, 3, 4----------------------------------------------------*/
+
+.flow{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #CBBEB5;
+  text-align: center;
+  font-size: 80%;
+  font-weight: normal;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.hover a:hover {
+  background-color: #ddd;
+  color: #3C3C3C;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #929292;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #CBBEB5;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.beskrivelse{
+	margin-left: 5%;
+}
+
+.beskrivelse h3{
+	color: #3C3C3C;
+}
+
+.bindhold{
+	width: 60%;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.links{
+	margin-bottom: 10px;
+	margin-left: 5%;
+}
+
+.dream{
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 10px 25px;
+	color: #3C3C3C;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: normal;
+	border-radius: 4px;
+	text-decoration: underline;
+}
+
+.links a:hover {
+  background-color: #CBBEB5;
+  color: #3C3C3C;
+}
+
+/*----------------------------------------------------Flow 5------------------------------------------------------*/
+
+.flow5{
+	width: 51%;
+	font-size: 16px;
+	line-height: 25px;
+	margin-left: 25%;
+	margin-bottom: 70px;
+}
+
+.myImg{
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.logo{
+	width: 70%;
+	padding-left: 25%;
+}
+
+.design{
+	width: 100%;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin:auto;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.flex-container div{
+	width: calc(50% - 10px);
+}
+
+.information{
+	display: inline-block;
+	color: #3C3C3C;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+/*-------------------------------------------------------Læring--------------------------------------------------------*/
+
+.learing{
+	margin-left: 20%;
+	width: 80%;
+}
+
+.learingflow1{
+	margin: 5%;
+}
+
+.learingflow1 p{
+	font-size: 16px;
+}
+
+.learingflow1 li a{
+	letter-spacing: 0.5%;
+	line-height: 25px;
+}
+
+.learingflow1 h2{
+	text-align: left;
+	font-size: 25px;
+}
+
+.linje{
+	width: 100%;
+	border-color: #CBBEB5; 
+}
+.info{
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+}
+
+.beskrivelseflow{
+	padding-bottom: 4%;
+}
+
+.beskrivelseflow p{
+	line-height: 25px;
+	width: 50%;
+	margin-top: 40px;
+}
+
+.learingflow1 img{
+	float: right;
+	width: 45%;
+	height: 450px;
+}
+
+.learingflow1 h2{
+	margin-bottom: 2%;
+	margin-top: 3%;
+}
+/*---------------------------------------------------STYLE OM MIG-----------------------------------------------*/
+
+.billedestr{
+	margin-top:40px;
+}
+
+.indhold{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.indhold img{
+	width: 30%;
+	height: auto;
+}
+
+.indhold div{
+	width: 70%;
+	padding-left: 70px;
+	margin-right: 50px;
+	line-height: 140%;
+}
+
+.indhold div h2{
+	text-align: center;
+	font-size: 35px;
+	color: #3C3C3C;
+}
+
+.indhold div h3{
+	text-align: center;
+	margin-top: 10px;
+	color: #3C3C3C;
+}
+
+.om{
+	font-size: 16px;
+	color: #3C3C3C;
+	line-height: 30px;
+	margin-bottom: 60px;
+}
+
+.indhold .facs{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding:0 !important;
+}
+
+.fac{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.fac p{
+	color: #3C3C3C;
+	white-space: nowrap;
+	font-size: 18px;
+	margin-top: 1px;
+	font-weight: bold;
+}
+
+/*.fac img{
+	width: 100%;
+}*/
+
+.indhold .facs .fac img{
+	width: 100%;
+}
+
+/*-------------------------------------------------STYLE KONTAKT-----------------------------------------------*/
+
+.tekst div h2{
+	font-size: 35px;
+	text-align: center;
+	color: #3C3C3C;
+}
+
+.tekst div h3{ 
+	text-align: center;
+	color: #3C3C3C;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded borders */
+    box-sizing: border-box;/* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.container{
+	width: 50%;
+	margin-left: 24%;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #CBBEB5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-left: 45%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #AEAEAE;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+

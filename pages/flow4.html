@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 4</title>
+
+<link href="../styles/s-styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">	
+</head>	
+	
+<body>
+	
+ <div class="navbar">
+  <a href="../index.html" id="logo"><img src="../images/logo.png" alt="Mit logo"></a>	 
+  <a href="kontakt.html">Kontakt</a>
+  <a href="om-mig.html">Om</a>
+  <a href="learing.html">Læring</a>
+  <div class="dropdown">
+    <button class="dropbtn knap"><a href="portfolio.html">Projekter</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="flow1.html">Flow 1</a>
+      <a href="flow2.html">Flow 2</a>
+      <a href="flow3.html">Flow 3</a>
+	  <a href="flow4.html">Flow 4</a>
+	  <a href="flow5.html">Flow 5</a>
+    </div>
+  </div> 
+</div>
+	<div class="tekst">
+	<div>
+		<h2>Byg Sweetbot responsive website</h2>
+		<h3>Flow 4</h3>
+	</div>
+	</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="../images/sweetforside.png" style="width:100%" alt="forside">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../images/produkter.png" style="width:100%" alt="produkter">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../images/medarbejdere.png" style="width:100%" alt="medarbejdere">
+  </div>
+	
+  <div class="mySlides fade">
+    <img src="../images/sweetkontakt.png" style="width:100%" alt="kontakt">
+  </div>	
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+</div>
+	
+<div class="beskrivelse">
+	<h3>Opgave</h3>
+	<p class="bindhold">Til dette projekt skulle jeg med min gruppe hjælpe et fiktivt internationalt webbureau ”Sweetbot” med at implementere en dansk udgave af deres website. Websitet skulle være optimeret til mobile enheder og der skulle indgå jQuery i løsningen. Vi skulle også lave visuelle elementer og informationsarkitektur til sitet, samt følge en styleguide. Derudover skulle vi også udvikle et logo og ikoner til deres e-commerce ”Hotbot”, som også skulle implementeres i den online website løsning. Det var et tidskrævende og udfordrende projekt, men også lærerigt, da man som en gruppe kunne bidrage til noget forskelligt og dele sine kompetencer med hinanden.  </p>
+</div>
+	<div class="links">
+	<a href="../pdf'er/sweetbotbeskrivelse.pdf" class="dream" target="_blank">Projektbeskrivelse</a>
+	<a href="#" class="dream" target="_blank">Original version</a>
+	<a href="http://sidselkaergaard.dk/Sweetbot-projekt-remaking/?fbclid=IwAR0GwjPR7qpiSLO8gWk2DwcnABaUl-5muoKucqrk-nhrec0zf4q7Yr-TCC8" class="dream" target="_blank">Forbedret version</a>
+	<a href="../rapporter/sweetbot.pdf" class="dream" target="_blank">Rapport</a>
+	</div>
+	
+<footer>
+	<p class= "copy"> &copy; Copyright 2018, Victoria Gudmund - Multimediedesigner</p>
+	<!--<div class="social">-->
+	<a href="https://www.linkedin.com/in/victoria-gudmund-andersen-ba6320172/" target="_blank"><img src="../images/linkedin.png" alt="linkedin" class="linked"></a>
+	<a href="https://www.pinterest.dk/victoriatanders/" target="_blank"><img src="../images/pinterest.png" alt="pinterest" class="pinter"></a>
+	<a href="https://www.instagram.com/victoriagudmund/?hl=da" target="_blank"><img src="../images/instagram.png" alt="instagram" class="insta"></a> 
+<!--</div>-->
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	
+</body>	
+</html>
